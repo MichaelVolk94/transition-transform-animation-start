@@ -114,3 +114,15 @@ transform: skewY(30deg);
 	50%{transform: translate (200px, 200px)}
 	75%{transform: translate(0, 200px)}
 }
+.animation .b2{
+	/* name direction iteration-count timing-function direction */
+	animation: moveAround 4s infinite ease-in-out alternate;
+}
+@keyframes flyOut {
+	0%{transform: scale(.5) rotateX(0deg) translateX(0);}
+	100%{transform: scale(1) rotateX(180deg) translateX(600px)}
+}
+.animation .b3 {
+/* name direction iteration-count timing-function direction */
+animation: flyOut 4s infinite ease-in-out alternate;	
+}
