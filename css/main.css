@@ -124,5 +124,12 @@ transform: skewY(30deg);
 }
 .animation .b3 {
 /* name direction iteration-count timing-function direction */
-animation: flyOut 4s infinite ease-in-out alternate;	
+animation: flyOut 2s infinite ease-in-out alternate;	
+}
+
+.animation .b4{
+	animation: flyOut 2s infinite cubic-bezier(.57,-0.14,.49,1.15) alternate;
+}
+.animation .b4:hover{
+	animation-play-state: paused;
 }
